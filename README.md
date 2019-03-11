@@ -13,7 +13,7 @@ __License:__ MIT
 
 __Support Level:__ Unsupported, if you fix something, please create a pull-request :)
 
-__Download latest version:__ [[released/biz.ictcore.dynatrace.ufo_1.0.0.jar]]
+__Download latest version:__ [biz.ictcore.dynatrace.ufo_1.0.0.jar](./released/biz.ictcore.dynatrace.ufo_1.0.0.jar)
 
 # Description
 This plugin is created to allow AppMon to update the status of the UFO. If you use this plugin as action in an incident, you can create 2 actions, the "on incident begin" action to set a color and the "on incident end" action to reset back to normal.

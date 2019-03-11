@@ -26,3 +26,5 @@ e.g.
 
 This will use the first 5 leds in color RED for begin and GREEN for end, without influencing anything else on the UFO.
 
+# ToDo
+If anyone thinks it's a good idea, you are free to add another variable in the UI, so that the "on incident begin" and the "on incident end" can be handled by the same plugin (so variable "on incident" and "back to normal").

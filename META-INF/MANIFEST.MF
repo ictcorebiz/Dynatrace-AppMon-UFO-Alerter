@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: biz.ictcore.dynatrace.ufo;singleton:=true
+Bundle-Name: UFO_Alerter
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Require-Bundle: com.dynatrace.diagnostics.sdk
+Bundle-ManifestVersion: 2
+Bundle-Vendor: IctCoreBiz
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<!-- plugin.xml file written by Dynatrace Client 6.5.38 -->
+<plugin>
+  <extension point="com.dynatrace.diagnostics.pdk.pluginconfig" id="biz.ictcore.dynatrace.ufo" name="UFO_Alerter">
+    <information>
+      <category value="" />
+      <displayname value="UFO Alerter" />
+      <description value="Simple plugin to send alerting info to a UFO" />
+      <supportlevel value="unsupported" />
+    </information>
+    <configuration>
+      <property key="myUfoUrl" label="UFO Endpoint" type="url" description="URL on which the UFO webserver is listening." default="https://yourserver/api" />
+      <property key="myAdditionalParams" label="Additional URL parameters" type="string" description="Additional parameters added on every request" default="Ufo=Ufo1" multiline="false" />
+      <property key="myColor" label="UFO Color string" type="string" description="The complete string to steer your UFO with the right colors" default="top_init&amp;bottom_init&amp;logo_reset&amp;bottom_bg=0|15|005500" multiline="false" />
+    </configuration>
+  </extension>
+  <extension point="com.dynatrace.diagnostics.pdk.action" id="biz.ictcore.dynatrace.ufo.action" name="UFO Action Plugin">
+    <plugin configid="biz.ictcore.dynatrace.ufo" class="biz.ictcore.dynatrace.ufo.UfoActionPlugin" />
+  </extension>
+</plugin>
